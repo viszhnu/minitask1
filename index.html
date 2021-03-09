@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document guvi</title>
+    <style>
+      .cardd {
+        border: black;
+        border-style: solid;
+        height: 300px;
+        width: 400px;
+      }
+      .cardhead{
+        height: 30px;
+        width: 380px;
+        padding-top: 6px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      .cardheadcontent {
+       position:absolute;
+       height: 30px;
+       width: 380px;
+       background-color:red;
+    
+      }
+      .phead{
+        padding-left: 30px;
+        text-align: center;
+        font-size: large;
+        color: white;
+        position: absolute;
+       top:-10px;
+      }
+      .input{
+        padding-left: 30px;
+      }
+    .inputtext{
+        border: none;
+        border-bottom: 2px solid black;
+        width: 130px;
+    }
+    .table{
+        border:1px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+    }
+    .inner{
+       position: absolute;
+       padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .tabhead{
+        position: relative;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+      
+    </style>
+  </head>
+  <body>
+      <p>1&2. Fix the bugs in below snippet</p>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <div>Guvi Geek Network</div>
+    </div>
+    <div>
+        <p>2. Design a contact us form with all fields as required.</p>
+      <form>
+        <h3>Form</h3>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required /><br /><br />
+        <label for="email">e-mail</label>
+        <input type="email" name="email" id="email" required /><br /><br />
+        <label for="gender" for="male" for="female">Gender</label>
+        <input type="radio" name="gender" id="male" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" required />
+        <label for="male">Female</label><br />
+        <input type="submit" name="values entered" value="submit" required />
+      </form>
+    </div>
+    <div>
+        <p>4. Use certain HTML elements to display the following in a HTML page.</p>
+      <ul>
+        <li>
+          Programming Language
+          <ul>
+            <li>
+              JavaScript
+              <ol>
+                <li>Angular</li>
+                <li>React</li>
+                <li>Vue.js</li>
+              </ol>
+            </li>
+            <li>
+              Python
+              <ol>
+                <li>Django Framework</li>
+                <li>Flask Framework</li>
+              </ol>
+            </li>
+            <li>
+              JavaScript
+              <ol>
+                <li>Spring</li>
+                <li>Maven</li>
+                <li>Hibernate</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Database
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Casandra</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div>
+        <p>5. Create an element that helps you to open the https://google.com in separate new tab.
+        </p>
+      <a href="https://www.google.com" target="blank">Click here</a>
+    </div>
+    <div>
+        <p>6. In the form, add two radio buttons with grouping them for employee type(Salaried and
+             own business)</p>
+      <form>
+        <input
+          type="radio"
+          name="employee_type"
+          id="salaried"
+          value="salaried"
+          required
+        />
+        <label for="male">Salaried</label>
+        <input
+          type="radio"
+          name="employee_type"
+          id="own_business"
+          value="own_business"
+          required
+        />
+        <label for="own_business">own business</label><br />
+        <input type="submit" name="values entered" value="submit" required />
+      </form>
+    </div>
+    <p>7. Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)</p>
+    <div class="cardd">
+        
+        <div class="cardhead">
+        <div class="cardheadcontent">
+            <p class="phead">Yes! I want to subscribe to Mag-O-Zine</p>
+        </div>
+    </div>
+    <table class="input">
+        <tbody>
+        <tr>
+            <td><input type="text" name="firstname" id="firstname" class="inputtext" required></td>
+            <td><input type="text" name="lastname" id="lasttname" class="inputtext" required></td>
+        </tr>
+        <tr>
+            <td><label  for="firstname">firstname</label></td>
+            <td><label  for="lastname">lastname</label></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" name="address" id="address" class="inputtext" 
+                style="width: 260px;" required></td>
+        </tr>
+        <tr>
+            <td><label  for="address">Address</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="city" id="city" class="inputtext" style="width: 70px;" required></td>
+            <td><input type="text" name="state" id="state" class="inputtext"style="width: 70px;" required></td>
+            <td><input type="number" name="zip" id="zip" class="inputtext"style="width: 70px;" required></td>
+        </tr>
+        <tr>
+            <td><label  for="city">city</label></td>
+            <td><label  for="state">state</label></td>
+            <td><label  for="zip">zip</label></td>
+        </tr>
+        <tr>
+            <td><label for="subscribe">subscribe for:</label></td>
+            <td><input type="radio" name="subscribe" id="oneyear" value="1" required>
+                <label for="oneyear">one year</label>
+            </td>
+            <td><input type="radio" name="subscribe" id="twoyear" value="2" required>
+                <label for="twoyear">two year</label></td>
+        </tr>
+        <tr>
+            <td colspan="3"><label for="comp" for="fish" for="cat">Send me more information about:</label></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="checkbox" name="comp" id="comp" value="yes" required>
+                <label for="comp">Computer-Zine</label>
+                
+            </td>
+        </tr>
+        
+               
+                <tr>
+                    <td colspan="3">
+                        <input type="checkbox" name="fish" id="fish" value="yes" required>
+                        <label for="fish">Fish Zine</label>
+                        
+                    </td>
+                </tr> 
+                <tr>
+                    <td colspan="3">
+                        <input type="checkbox" name="cat" id="cat" value="1=yes" required>
+                <label for="cat">Cat zine</label>
+                        
+                    </td>
+                </tr>
+            </tbody>  
+    </table>
+  
+    <div style="padding-top: 20px;">
+        <p>8. Use the table tag to design given image Click here.</p>
+        <div class="tabhead">
+            <p style="text-align: center;">Health Chart</p>
+        </div>
+        <table class="table">
+            <tbody class="table">
+               <tr class="table">
+                   <th class="table" rowspan="2">State of health</th>
+                   <th class="table" colspan="2">Fasting Value</th>
+                   <th class="table" >After eating</th>
+               </tr>
+               <tr class="table">
+                   <th class="table">minimum</th>
+                   <th class="table">maximum</th>
+                   <th class="table">2hrs after eating</th>
+
+               </tr>
+               <tr class="table">
+                <th class="table">Healthy</th>
+                <td class="table">70</td>
+                <td class="table" >100</td>
+                <td class="table" >Less than 140</td>
+            </tr>
+            <tr class="table">
+                <th class="table">Pre-Diabetes</th>
+                <td class="table">101</td>
+                <td class="table">126</td>
+                <td class="table" >140 to 200</td>
+            </tr>
+            <tr class="table">
+                <th class="table">Diabetes</th>
+                <td class="table">More than 126</td>
+                <td class="table" >N/A</td>
+                <td class="table" >More than 200</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>9. Write HTML input tags snippet to show default values for all Form elements.</p>
+    <div>
+        <form>
+          <h3>Form</h3>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" value="xxx"required /><br /><br />
+          <label for="email">e-mail</label>
+          <input type="email" name="email" id="email"  value="xxx@yyy.com"required /><br /><br />
+          <label for="gender" for="male" for="female">Gender</label>
+          <input type="radio" name="gender" id="male" value="male" checked required />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female" required />
+          <label for="male">Female</label><br />
+          <input type="submit" name="values entered" value="submit" required />
+        </form>
+      </div>
+   <div>
+       <p>10. In your, HTML page add the below line and Highlight it without using any CSS.</p>
+       <ul>
+           <li>"HTML & CSS is awesome"</li>
+       </ul>
+   </div>
+   <div>
+       <p>11. Create an HTML page, which should contain all types of input elements.</p>
+    <form>
+      <h3>Form</h3>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required /><br /><br />
+      <label for="email">e-mail</label>
+      <input type="email" name="email" id="email" required /><br /><br />
+      <label for="gender" for="male" for="female">Gender</label>
+      <input type="radio" name="gender" id="male" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" required />
+      <label for="male">Female</label><br />
+      <input type="checkbox" name="fish" id="fish" value="yes" required>
+                        <label for="fish">Fish Zine</label></div>
+      <input type="submit" name="values entered" value="submit" required />
+    </form>
+  </div>
+<div>
+    </div>
+  </body>
+</html>
